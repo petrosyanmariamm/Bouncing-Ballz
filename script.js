@@ -10,9 +10,9 @@ class Circle {
         this.x = x;
         this.y = y;
         this.radius = radius;
-        this.dy = 0; // vertical velocity // aragutyun
+        this.dy = 0; 
         this.gravity = 0.5;
-        this.friction = 0.7; // dampening effect
+        this.friction = 0.7;
     }
 
     draw() {
@@ -39,7 +39,7 @@ canvas.addEventListener('click', function(event) {
     const rect = canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    const radius = 25; // or any size you prefer
+    const radius = 25;
     circles.push(new Circle(x, y, radius));
 });
 
