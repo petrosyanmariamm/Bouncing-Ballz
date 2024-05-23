@@ -40,7 +40,9 @@ canvas.addEventListener('click', function(event) {
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     const radius = 25;
-    circles.push(new Circle(x, y, radius));
+    circles.length < 15 ?
+    circles.push(new Circle(x, y, radius)):
+    circles.length = 0; 
 });
 
 function animate() {
